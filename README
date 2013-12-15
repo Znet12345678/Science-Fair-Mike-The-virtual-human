@@ -1,0 +1,5 @@
+By Zachary Schlotman.
+You are free to edit the software after jan 1st 2014.
+This is for Science fair 2013.
+To Install Do ./configure --prefix=/usr && make install
+You do not need to do make all because this was made in bash.

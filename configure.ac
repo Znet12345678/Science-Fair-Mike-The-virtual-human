@@ -1,0 +1,17 @@
+AC_INIT([Mike Human], [dev-7.0])
+AC_PROG_CC
+AC_PROG_CXX
+AC_CHECK_FILE(/bin/bash, [], [exit;])
+AC_CHECK_FILE(./virtualhuman, [], [exit;])
+AC_CHECK_FILE(./age, [], [touch age;])
+AC_CHECK_FILE(./name, [], [touch name;])
+AC_CHECK_FILE(./happ, [], [])
+AC_CHECK_FILE(./init, [], [exit;])
+AC_CHECK_FILE(./afend, [], [touch afend;])
+AC_CHECK_FILE(./WIP, [], [mkdir WIP; touch WIP/Calculator; touch WIP/AlgebraicCalculator;])
+AC_CHECK_FILE(/math, [rm -rv /math;], [])
+AC_CHECK_FILE(/bash-human, [rm -rv /bash-human], [])
+AC_CHECK_FILE(/usr/local/bin/virtualhuman, [rm -rv /usr/local/bin/virtualhuman], [])
+AC_CHECK_FILE(/usr/local/bin, [], [mkdir /usr/local/bin])
+AM_INIT_AUTOMAKE([1.10 -Wall no-define])
+AC_OUTPUT(Makefile)

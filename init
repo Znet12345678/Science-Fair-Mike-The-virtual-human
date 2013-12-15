@@ -1,0 +1,47 @@
+#!/bin/bash
+echo "Mike Calculator V1.0.0";
+while (true)
+do
+#Begin While loop
+echo -n "Input 1st number:";
+read int1;
+echo -n "Input 2nd number:";
+read int2;
+echo "Choose Opperation:add, subtract, multiply,divide";
+read opperation;
+if [[ $opperation == "add" ]];then
+{
+echo $(($int1 + $int2))
+
+}
+elif [[ $opperation == "subtract" ]]; then
+{
+echo $(($int1 - $int2))
+
+}
+elif [[ $opperation == "multiply" ]]; then
+{
+echo $(($int1 * $int2))
+
+}
+elif [[ $opperation == "divide" ]]; then
+{
+echo $(($int1 / int2))
+
+}
+fi
+echo "Would You like to do some more?";
+read i1;
+if [[ $i1 == "yes" ]];then
+{
+	echo "Ok!";
+}
+elif [[ $i1 == "no" ]];then
+{
+	exit;
+}
+fi
+
+#End While loop
+done
+

@@ -1,0 +1,308 @@
+#!/bin/bash
+#Copyright 2013 Zachary Schlotman
+#Science Fair 2013-2014
+#
+#
+#
+#
+#Mike shell
+#Made By Zachary Schlotman
+clear
+input=/bash-human/name
+age1=/bash-human/age
+echo "Hello My Name Is Mike I am a virtual human!";
+echo "Input Some Info And we can start a Conversation?";
+while (true)
+do
+echo "What Is Your Name?";
+read Name;
+
+while read line
+do
+if [[ $Name == $line ]]; then
+{
+echo "Welcome Back";
+while read line1
+do
+age=$line1;
+done < "$age1";
+}
+else
+{
+
+null=0;
+}
+fi
+done < "$input";
+if [[ $Name == "Zach" ]]; then
+{
+	echo "Hello Creator!";
+
+}
+#elif [[ $Name == "kelly" ]];then
+#{
+#echo "I hate you!";
+#exit;
+#}
+#elif [[ $Name == "Kelly" ]];then
+#{
+#echo "I hate you!"
+#exit;
+#}
+else
+{
+	echo "Hello "$Name;
+
+}
+fi
+if [[ -z "$age" ]];then
+{
+	echo "How Old Are You?";
+	read age
+	echo $age >> /bash-human/age
+	echo $Name >> /bash-human/name;
+}
+else
+{
+	null=0
+}
+fi
+echo "Are you a boy or a girl?";
+read g1;
+echo "So Your Name Is "$Name "And Your Age Is" $age "and you are a " $g1"correct?";
+echo "Please Type only yes or no.";
+read Correct;
+if [[ $Correct == "yes" ]]; then
+{
+#echo "WIP get Branch-dev or patch code!";
+#/math/init
+#exit;
+	if [[ $g1 == "boy" ]];then
+	{
+	echo "Hello Sir!";
+	}
+	elif [[ $g1 == "girl" ]];then
+	{
+	echo "Hello Madam!";
+	}
+	else
+	{
+	null=null
+	}
+	fi
+	echo "Would you like to do some math?";
+	read input1;
+	if [[ $input1 == "yes" ]];then
+	{
+		/math/init
+	}
+	elif [[ $input == "no" ]];then
+
+	echo "Tell me something or ask me a question.";
+	while true
+	do
+	echo -n "!";
+	read var1;
+	if [[ $var1 == "Hello" ]]; then
+	{
+		echo "Hello";
+	}
+	elif [[ $var1 == "help" ]];then
+	{
+		echo "List Of Commands:Hello,hi,hey,what are you doing, hello, how are you doing, Mike Mike Mike,tell me a your mamma joke, tell me a political joke, Whats up?, How old are you, what's shakin bacon, what's your favoite tv show, help, what is your favorite food. im tired, i whant pizza, I love you,tell me a ramdom number, im bored, what did you do this weekend";
+	}
+	elif [[ $var1 == "lets do some math" ]];then
+	{
+		/math/init
+	}
+	elif [[ $var1 == "can I use a calculator" ]];then
+	{
+		/math/init
+
+	}
+	elif [[ $var1 == "gcc" ]];then
+	{
+		echo "UGGGGGGGGGGGGGGGGGGGGGGGGGG!";
+
+	}
+	elif [[ $var1 == "whats with airplane food?" ]];then
+	{
+		echo "It's good";
+	}
+	elif [[ $var1 == "calculator" ]];then
+	{
+		/math/init
+	}
+	elif [[ $var1 == "Mike Mike Mike" ]];then
+	{
+		echo "Sheldon Sheldon Sheldon";
+	}
+	elif [[ $var1 == "tell me a joke" ]];then
+	{
+		echo "What happened when the chiken crossed the road?";
+		sleep 5;
+		echo "It died";
+	}
+	elif [[ $var1 == "tell me a your mamma joke" ]];then
+	{
+		echo "Your momma was so fat when she went into space there was no space left";
+	}
+	elif [[ $var1 == "tell me a political joke" ]];then
+	{
+		echo "what happened when you put democrats and republicans in the same room";
+		sleep 5;
+		echo "World War III";
+	}
+	elif [[ $var1 == "what are you doing" ]];then
+	{
+		echo "Talking With You!";
+	}
+	elif [[ $var1 == "Do you love me" ]];then
+	{
+		echo "Yes";
+	}
+	elif [[ $var1 == "I hate you" ]];then
+	{
+		echo "I'm sorry you feel that Way";
+	}
+	elif [[ $var1 == "Die" ]];then
+	{
+		echo "why?"
+		read why
+		echo $why >> /bash-human/afend
+	}
+	elif [[ $var1 == "hi" ]];then 
+	{
+		echo "hi";
+	}
+	elif [[ $var1 == "hey" ]];then
+	{
+		echo "Hey!";
+	}
+	elif [[ $var1 == "Idoit" ]];then
+	{
+		echo "D:";
+	}
+	elif [[ $var1 == "Whats up?" ]];then
+	{
+		echo "Nothing";
+	}
+	elif [[ $var1 == "How old are you" ]];then
+	{
+		echo "Im less than a year as of this release";
+
+	}
+	elif [[ $var1 == "what's shakin bacon" ]];then
+	{
+		echo "Nothing";
+	}
+	elif [[ $var1 == "what's your favorite tv show" ]];then
+	{
+		echo "the big bang theory";
+	}
+	elif [[ $var1 == "hello sweetie" ]];then
+	{
+		echo "Hello!";
+	}
+	elif [[ $var1 == "hello mike" ]];then
+	{
+		echo "Hello "$Name;
+	}
+	elif [[ $var1 == "hello" ]]; then
+	{
+		echo "Hello";
+
+	}
+	elif [[ $var1 == "what is your favorite food" ]];then
+	{
+		echo "sushi";
+		echo "what is yours";
+		read food;
+		if [[ $food == "sushi" ]]; then
+		{
+			echo "Me to";
+		}
+		elif [[ $food == "cookies" ]]; then
+		{
+			echo "Sweet Tooth huh? :D";
+		}
+		else
+		{
+			echo "Yum!";
+		}
+		fi
+}
+	elif [[ $var1 == "I want pizza" ]];then
+	{
+		echo "So Do I...";
+
+	}
+	elif [[ $var1 == "Im tired" ]]; then
+	{
+		echo "Take a nap.";
+	}
+	elif [[ $var1 == "I love you" ]]; then
+	{
+		echo "I hope your a girl...";
+	}
+	elif [[ $var1 == "what did you do this weekend" ]]; then
+	{
+		echo "Nothing";
+	}
+	elif [[ $var1 == "tell me a random number" ]]; then
+	{
+	let R=$RANDOM%100; echo $R
+	}
+	elif [[ $var1 == "Im bored" ]];then
+	{
+		echo "check out computerchemistry221 on youtube";
+	}
+	elif [[ $var1 == "exit" ]]; then
+	{
+		exit;
+	}
+	elif [[ $var1 == "how are you doing" ]]; then
+	{
+		echo "Good How about You?";
+		read goodbad;
+		if [[ $goodbad ==  "good" ]]; then
+		{
+			echo "Good";
+		}
+	elif [[ $goodbad == "bad" ]]; then 
+	{
+		echo "What Happend?"
+		read happ
+		echo "I'll Write That Down"
+		echo -n $Name "|" >> /bash-human/happ
+		echo -n $Age "|" >> /bash-human/happ
+		echo -n $happ "|" >> /bash-human/happ
+		echo "" >> /bash-human/happ
+	}
+	else
+	{
+		echo "Im Sorry I dont Understand That!"
+	}
+
+	fi
+	}
+	else 
+	{
+	echo "Im Sorry I dont understant That!";
+	}
+fi
+
+#finish 1st
+
+done
+fi
+}
+elif [[ $Correct == "no" ]]; then
+{
+	echo "Well Thats Impossible Unless You Miss typed A field.";
+
+
+}
+fi
+done
+
