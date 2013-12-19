@@ -31,8 +31,6 @@ PATH: /tools/bin
 PATH: /bin
 PATH: /usr/bin
 PATH: /usr/local/bin
-PATH: /sbin
-PATH: /usr/sbin
 
 
 ## ----------- ##

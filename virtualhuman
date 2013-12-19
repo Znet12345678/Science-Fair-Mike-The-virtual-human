@@ -96,7 +96,7 @@ if [[ $Correct == "yes" ]]; then
 	{
 		/math/init
 	}
-	elif [[ $input == "no" ]];then
+	elif [[ $input1 == "no" ]];then
 
 	echo "Tell me something or ask me a question.";
 	while true
