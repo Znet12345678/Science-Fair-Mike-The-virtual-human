@@ -9,8 +9,8 @@ all:install
 install:
 	mkdir /math
 	mkdir /bash-human
-	cp virtualhuman /usr/local/bin
-	ln /usr/local/bin/virtualhuman /usr/local/bin/mike
+	cp virtualhuman /${prefix}/bin
+	ln /${prefix}/bin/virtualhuman ${prefix}/bin/mike
 	cp ./init /math/init
 	cp ./name /bash-human/name
 	cp ./age /bash-human/age	
@@ -19,8 +19,8 @@ install:
 clean:
 	rm -rv /math
 	rm -rv /bash-human
-	rm -rv /usr/local/bin/mike
-	rm -rv /usr/local/bin/virtualhuman
+	rm -rv /{prefix}/bin/mike
+	rm -rv /{prefix}/bin/virtualhuman
 doc:
 	mkdir /bash-human/doc
 	cp changelog /bash-human/doc
@@ -34,8 +34,8 @@ cleanfull:
 	rm -rv /math
 	rm -rv /bash-human
 	rm -rv /WIP
-	rm -rv /usr/local/bin/mike
-	rm -rv /usr/local/bin/virtualhuman
+	rm -rv /{prefix}/bin/mike
+	rm -rv /{prefix}/bin/virtualhuman
 test:
 	
 run:
